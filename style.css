@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Navbar Styles */
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  height: 82px;
+  z-index: 1000;
+}
+/* 
+.topnav .logo img {
+  height: 60px;
+} */
+
+.topnav .menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav .menu ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav .menu ul li {
+  list-style: none;
+}
+
+.topnav .menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.topnav .social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.topnav .social-media a img {
+  width: 18px;
+}
+
+/* Centered Content */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 28px;
+  height: 80vh;
+}
+
+/* Quote Section */
+.quote {
+  background-image: url("assets/background/our-motto.png");
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 45px;
+}
+
+.quote span {
+  font-weight: bold;
+}
