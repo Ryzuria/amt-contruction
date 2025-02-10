@@ -20,7 +20,6 @@ body {
   font-weight: 700;
 }
 
-/* Navbar Styles */
 .topnav {
   position: fixed;
   top: 0;
@@ -33,10 +32,6 @@ body {
   height: 82px;
   z-index: 1000;
 }
-/* 
-.topnav .logo img {
-  height: 60px;
-} */
 
 .topnav .menu {
   flex-grow: 1;
@@ -72,7 +67,6 @@ body {
   width: 18px;
 }
 
-/* Centered Content */
 .center-container {
   display: flex;
   justify-content: center;
@@ -81,9 +75,10 @@ body {
   height: 80vh;
 }
 
-/* Quote Section */
 .quote {
   background-image: url("assets/background/our-motto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   font-size: 30px;
   font-weight: 200;
@@ -92,4 +87,89 @@ body {
 
 .quote span {
   font-weight: bold;
+}
+
+.motto {
+  font-size: 30px;
+  font-weight: 200;
+  align-items: center;
+  text-align: center;
+  line-height: 45px;
+}
+
+.banner {
+  background-image: url("assets/background/Gradient\ Image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 45px;
+}
+
+.banner h1 {
+  font-size: 50px;
+  margin: 0 0 20px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 60px;
+  justify-items: center;
+  padding: 60px 40px;
+}
+
+.blurb {
+  width: 330px;
+  height: 326px;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #dadada;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+}
+
+.blurb h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.blurb:first-child h2 {
+  color: #d020fc;
+}
+.blurb:nth-child(2) h2 {
+  color: #fc7f44;
+}
+.blurb:nth-child(3) h2 {
+  color: #7554da;
+}
+.blurb:nth-child(4) h2 {
+  color: #e7192e;
+}
+.blurb:nth-child(5) h2 {
+  color: #ff34c8;
+}
+.blurb:last-child h2 {
+  color: #f9b137;
+}
+
+.blurb p {
+  text-align: center;
+  text-wrap: balance;
+  line-height: 20px;
+  margin: 0;
 }
