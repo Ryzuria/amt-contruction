@@ -173,3 +173,17 @@ body {
   line-height: 20px;
   margin: 0;
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.image-grid img {
+  width: 100%;
+}
+
+#client {
+  background-color: #000000;
+}
