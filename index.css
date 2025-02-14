@@ -58,7 +58,7 @@ body {
   display: block;
 }
 
-.topnav .social-media {
+.social-media {
   display: flex;
   gap: 15px;
 }
@@ -274,7 +274,7 @@ input::placeholder {
   color: #b0b0b0;
 }
 
-button {
+.submit-btn button {
   background: #000000;
   color: #ffffff;
   padding: 12px;
@@ -285,7 +285,7 @@ button {
   align-self: flex-end;
 }
 
-button:hover {
+.submit-btn button:hover {
   background: #444444;
 }
 
@@ -293,4 +293,60 @@ button:hover {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+footer {
+  background-color: #000000;
+  padding: 42px;
+  display: flex;
+  justify-content: space-around;
+  justify-self: start;
+  width: 100%;
+  color: #ffffff;
+}
+
+.copyright {
+  max-width: 60%;
+}
+
+.copyright button {
+  background: #000000;
+  color: #ffffff;
+  margin: 12px 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright p {
+  font-size: 12px;
+  color: #bdbdbd;
+}
+
+.quick-link p,
+.get-in-touch p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.quick-link,
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+}
+.quick-link a,
+.get-in-touch a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 4px 0;
+}
+
+
+.get-in-touch .social-media {
+  margin-top: 10px;
 }
