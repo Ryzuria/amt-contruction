@@ -67,12 +67,52 @@ body {
   width: 18px;
 }
 
-.center-container {
+#ABOUT {
+  padding-top: 100px;
+}
+
+.header {
+  padding: 50px 20px;
+  position: relative;
+  height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 28px;
-  height: 80vh;
+  justify-content: space-around;
+  left: -10%;
+}
+
+.header .logo {
+  width: 388px;
+  height: 167px;
+}
+
+.description {
+  max-width: 500px;
+  position: absolute;
+  top: 250px;
+}
+
+.description p {
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.description a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  font-size: inherit;
+  color: inherit;
+}
+
+.brochure {
+  position: absolute;
+  top: 30px;
+  right: 10%;
+  transform: rotate(-10deg);
+  width: 536px;
+  height: 570px;
+  z-index: -1;
 }
 
 .quote {
@@ -83,6 +123,11 @@ body {
   font-size: 30px;
   font-weight: 200;
   line-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 28px;
+  height: 80vh;
 }
 
 .quote span {
@@ -245,6 +290,7 @@ body {
 #CONTACT p {
   font-size: 20px;
   margin: 20px 0;
+  padding-bottom: 20px;
 }
 
 .contact-form {
@@ -306,7 +352,7 @@ footer {
 }
 
 .copyright {
-  max-width: 60%;
+  max-width: 30%;
 }
 
 .copyright button {
@@ -325,6 +371,11 @@ footer {
 .copyright p {
   font-size: 12px;
   color: #bdbdbd;
+  width: 70%;
+}
+
+.copyright p:last-child {
+  font-weight: 600;
 }
 
 .quick-link p,
@@ -345,7 +396,6 @@ footer {
   color: #ffffff;
   margin: 4px 0;
 }
-
 
 .get-in-touch .social-media {
   margin-top: 10px;
