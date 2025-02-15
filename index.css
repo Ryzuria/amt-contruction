@@ -12,14 +12,6 @@ body {
   box-sizing: border-box;
 }
 
-.font-white {
-  color: #ffffff;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
 .topnav {
   position: fixed;
   top: 0;
@@ -56,6 +48,7 @@ body {
   padding: 14px 16px;
   font-weight: bold;
   display: block;
+  font-weight: 700;
 }
 
 .social-media {
@@ -132,6 +125,9 @@ body {
 
 .quote span {
   font-weight: bold;
+  font-size: inherit;
+  font-weight: bold;
+  color: inherit;
 }
 
 .motto {
@@ -140,6 +136,7 @@ body {
   align-items: center;
   text-align: center;
   line-height: 45px;
+  color: #ffffff;
 }
 
 .banner {
@@ -153,11 +150,13 @@ body {
   justify-content: center;
   text-align: center;
   padding: 45px;
+  color: #ffffff;
 }
 
 .banner h1 {
   font-size: 50px;
   margin: 0 0 20px;
+  font-weight: 700;
 }
 
 .banner p {
@@ -310,6 +309,17 @@ select {
   font-size: 12px;
   width: 100%;
   border-radius: 0px;
+}
+
+select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 3em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
 }
 
 input:focus {
