@@ -330,6 +330,31 @@ input::placeholder {
   color: #b0b0b0;
 }
 
+input[type="date"] {
+  padding: 12px;
+  background-image: url("assets/icons/calendar.png"),
+    linear-gradient(to right, #ccc, #ccc);
+  background-repeat: no-repeat;
+  background-position: right 10px center, calc(100% - 3em) 0.5em;
+  background-size: 15px 14px, 1px 2em;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="date"]:focus {
+  outline: none;
+}
+
+.dateline {
+  background-image: url("assets/icons/calendar.png"),
+    linear-gradient(to right, #ccc, #ccc);
+  background-repeat: no-repeat;
+  background-position: right 10px center, calc(100% - 3em) 0.5em;
+  background-size: 15px 14px, 1px 2em;
+}
+
 .submit-btn button {
   background: #000000;
   color: #ffffff;
